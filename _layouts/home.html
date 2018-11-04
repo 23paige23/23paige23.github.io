@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section id="main_content" class="inner" style="column-count: 2">
+    {% assign comicList = site.assets.comics %} <!--docs | sort: 'title'  -->
+    <ol>
+        {% for comic in comicList %}
+            <img src="https://via.placeholder.com/150">
+        {% endfor %}
+    </ol>
+    <!--{{ content }}-->
+</section>
