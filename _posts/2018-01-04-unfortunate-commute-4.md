@@ -1,6 +1,6 @@
 ---
 layout: comic
 title: "test"
-image-src: "assets/comics/comic3.jpg"
+image-src: "assets/comics/comic5.jpg"
 categories: comics
 ---
