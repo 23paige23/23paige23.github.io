@@ -2,11 +2,10 @@
 ---
 @import "jekyll-theme-slate";
 
-.img-thumbnail{
-    width:100%;
-    max-width:px;
+.img-thumbnail:hover {
+    background-color: red;
+    opacity: 0.5;
 }
-
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
