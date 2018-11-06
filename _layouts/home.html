@@ -6,7 +6,7 @@ layout: default
     {% assign comicList = site.posts %} <!--docs | sort: 'title'  -->
 
     {% for comic in comicList %}
-        <img src="{{comic.image-src | relative_url }}">
+        <img class="img-thumbnail" src="{{comic.image-src | relative_url }}">
     {% endfor %}
     
 </section>
