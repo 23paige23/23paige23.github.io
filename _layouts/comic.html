@@ -10,6 +10,32 @@ layout: default
         {{ content }}
     </div>
 
+    <section class="p-5">
+        {% if page.previous %}
+            {% assign previous = page.previous %}
+            <div class="float-left">
+                <a class="equalize" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+                    <div>
+                        <h4> ← {{previous.title}} </h4>
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+        
+    
+        {% if page.next %}
+            {% assign next = page.next %}
+            <div class="float-right">
+                <a href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+                    <div>
+                        <h4> {{next.title}} →</h4>
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+            
+    </section>
+
     {%- if site.disqus.shortname -%}
         {%- include disqus-comments.html -%}
     {%- endif -%}

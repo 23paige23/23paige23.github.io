@@ -1,6 +1,18 @@
 title: Morale Comics
 description: Let's lighten up the day.
+
 google_analytics:
+
+header_pages:
+  - contact.html
+  - another-page.md
+
+paginate: 30
+paginate_path: "/comics/page:num/"
+
+disqus:
+  shortname: moralecomics
+
 
 theme: jekyll-theme-slate
 
